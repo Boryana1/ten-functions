@@ -93,9 +93,9 @@ function not(x){
 // addOne(NaN)                  // NaN
 
 function addOne (x) {
-    if
+        return (Number(x)+1);
+    }
 
-}
 // Define a function named isEven that takes in a single input. If the input is an even number or a string containing an even number, return true. Any other input should return false for the output.
 //
 // isEven(2)                   // true
@@ -106,6 +106,14 @@ function addOne (x) {
 // isEven("-3")                // false
 // isEven(false)               // false
 // isEven("banana")            // false
+
+function isEven(x) {
+    if ((x % 2 )=== 0) {
+       return true;
+    } else {
+        return false;
+    }
+}
 // Define a function named isIdentical that takes in two input arguments. If each input is equal both in data type and in value, then return true. If the values are not the same data type or not the same value, return false.
 //
 // isIdentical(3, 3)                     // true
@@ -115,6 +123,14 @@ function addOne (x) {
 // isIdentical(undefined, undefined)     // true
 // isIdentical(2, "2")                   // false
 // isIdentical("javascript", "java")     // false
+
+function isIdentical(a, b) {
+    if (a === b) {
+        return true;
+    } else {
+        return false;
+    }
+}
 // Define a function named isEqual that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
 //
 // isEqual(3, "3")                       // true
@@ -123,6 +139,14 @@ function addOne (x) {
 // isEqual(0, false)                     // true
 // isEqual(4, -5)                        // false
 // isEqual("java", "javascript")         // false
+
+function isEqual (a, b) {
+    if (a == b) {
+        return true;
+    } else {
+        return false;
+    }
+}
 // Define a function named or that takes in two input arguments. The output returned should be the result of an or operation on both inputs.
 //
 // or(true, true)                    // true
@@ -130,6 +154,11 @@ function addOne (x) {
 // or(false, true)                   // true
 // or(false, false)                  // false
 // or("hello", "world")              // "hello" (this behavior is non-obvious, research more!)
+
+function or (a, b) {
+    return (a || b);
+}
+
 // Define a function named and that takes in two input arguments and returns the result of a logical and operation of both inputs.
 //
 // and(true, true)                    // true
@@ -137,13 +166,21 @@ function addOne (x) {
 // and(false, true)                   // false
 // and(false, false)                  // false
 // and("hello", "world")              // "world" (this behavior is non-obvious, research more)
+
+function and (a, b) {
+    return (a && b);
+}
 // Define a function named concat that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
 //
 // concat("code", "up")                // "codeup"
 // concat("connect", 4)                // "connect4"
 // concat("hello", "world")            // "helloworld"
 // concat(4, 2)                        // "42"
-// concat(true, true)                  // "truetrue"
+// concat(true, true)                  // "truetrue
+
+function concat (a, b) {
+    return String(a) + String(b);
+}
 // Hints
 // Consider this example problem.
 //
